@@ -33,16 +33,22 @@ struct maps *get_global_maps(void) {
 }
 
 int do_preinitialize(void) {
-  if (g_maps) {
+  if (g_maps && g_maps->maps) {
     LOGD("PI: g_maps already exists with size=%zu", g_maps->size);
-  } else {
-    g_maps = get_global_maps();
-    if (!g_maps) {
-      LOGE("PI: Failed to allocate maps");
-      return 0;
-    }
+    return 1;
   }
-  g_maps->size = (size_t)(rand() % 16);
+
+  if (g_maps) {
+    free(g_maps);
+    g_maps = NULL;
+  }
+
+  g_maps = parse_maps("/proc/self/maps");
+  if (!g_maps) {
+    LOGE("PI: Failed to parse maps");
+    return 0;
+  }
+
   LOGI("PI: Preinitialized maps size=%zu", g_maps->size);
   return 1;
 }
