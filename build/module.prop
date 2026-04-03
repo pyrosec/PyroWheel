@@ -1,0 +1,7 @@
+id=treat_wheel
+name=Treat Wheel
+version=v0.0.9
+versionCode=009
+author=ThePedroo
+description=Not tricky, but a treat, reinventing the wheel.
+updateJson=https://raw.githubusercontent.com/ThePedroo/RemoteFiles/refs/heads/main/TreatWheel/update.json

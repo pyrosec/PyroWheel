@@ -1,0 +1,86 @@
+{
+  "langName": "Bahasa Indonesia",
+  "pages": {
+    "home": {
+      "title": "Beranda",
+      "workingModes": {
+        "working": "Bekerja dan menyembunyikan",
+        "crashed": "Gagal untuk menyembunyikan",
+        "ignoring": "Mengabaikan",
+        "unknown": "Tidak dapat menentukan",
+        "disabled": "Tidak bekerja",
+        "sigcheckFailed": "Tanda digital ReZygisk tidak sah",
+        "improperAttribution": "Atribusi pemilik TW tidak tepat"
+      },
+      "version": "Versi",
+      "rootImpl": "Implementasi Root",
+      "rootImpls": {
+        "multiple": "Beragam"
+      }
+    },
+    "actions": {
+      "title": "Aksi",
+      "ignoreMode": {
+        "title": "Mengabaikan siapapun dan apapun",
+        "description": "Opsi ini akan menonaktifkan Treat Wheel untuk sementara. Opsi ini dapat diaktifkan kembali tanpa perlu melakukan boot ulang, tetapi mengaktifkannya akan membuat semua opsi penyembunyian tidak berguna hingga dinonaktifkan."
+      },
+      "propSpoofing": {
+        "title": "Nonaktifkan pemalsuan prop (sia-sia)",
+        "description": "Opsi ini akan membuat Treat Wheel berhenti melakukan pemalsuan prop yang sensitif dan prop yang terkait dengan kustom ROM. Reboot diperlukan agar opsi ini memberikan efek."
+      },
+      "gsiTraceHiding": {
+        "title": "Nonaktifkan penyembunyian jejak GSI (sia-sia)",
+        "description": "Opsi ini akan membuat Treat Wheel berhenti menyembunyikan jejak GSI."
+      },
+      "zygoteMountInfoLeakFixing": {
+        "title": "Nonaktifkan perbaikan kebocoran mountinfo Zygote",
+        "description": "Opsi ini akan membuat Treat Wheel berhenti memperbaiki kebocoran mountinfo yang dibuat oleh Zygote, seperti yang ada pada sistem yang belum di-root. Memerlukan Android 11 atau yang lebih baru."
+      },
+      "mapsHiding": {
+        "title": "Nonaktifkan penyembunyian pemetaan (sia-sia)",
+        "description": "Opsi ini akan membuat Treat Wheel berhenti menyembunyikan pemetaan yang mencurigakan. Penyembunyian seperti ini memang sia-sia, tetapi membantu melewati beberapa detektor."
+      },
+      "ReVancedModuleMountsHiding": {
+        "title": "Nonaktifkan penyembunyian mount modul ReVanced",
+        "description": "Opsi ini akan membuat Treat Wheel berhenti menyembunyikan mount yang dibuat modul ReVanced secara global. Modul ReVanced harus secara eksplisit memiliki dukungan untuk Treat Wheel agar dapat di-unmount."
+      },
+      "customFontLoading": {
+        "title": "Nonaktifkan pemuatan font khusus",
+        "description": "Opsi ini akan membuat Treat Wheel berhenti memuat font khusus dari sistem."
+      },
+      "denylistLogicInversion": {
+        "title": "Nonaktifkan inversi logika denylist",
+        "description": "Opsi ini akan membuat Treat Wheel membalikkan DenyList, sehingga aplikasi yang di dalam DenyList akan menerima root, sedangkan aplikasi yang tidak di dalam DenyList tidak akan menerima root. Mirip dengan SuList di Magisk Kitsune ketika tombol ini dinonaktifkan."
+      },
+      "moduleLoadingTracesHiding": {
+        "title": "Nonaktifkan penyembunyian jejak pemuatan modul",
+        "description": "Opsi ini akan membuat Treat Wheel berhenti menyembunyikan jejak yang dihasilkan oleh beberapa modul selama pemuatannya."
+      },
+      "fridaTracesHiding": {
+        "title": "Nonaktifkan penyembunyian jejak Frida",
+        "description": "Opsi ini akan membuat Treat Wheel berhenti menyembunyikan jejak injeksi yang dihasilkan oleh Frida."
+      }
+    },
+    "settings": {
+      "title": "Pengaturan",
+      "language": {
+        "title": "Ganti bahasa",
+        "description": "Ubah bahasa WebUI ke bahasa yang dipilih."
+      },
+      "fullscreen": {
+        "title": "Nonaktifkan mode layar penuh di WebUI",
+        "description": "Opsi ini akan membuat WebUI tidak memenuhi seluruh layar."
+      },
+      "moduleDevelopers": "Pengembang Modul",
+      "WebUIDevelopers": "Pengembang WebUI",
+      "moduleLicense": {
+        "title": "Lisensi Modul",
+        "license": "Hak milik"
+      },
+      "WebUILicense": "Lisensi WebUI"
+    }
+  },
+  "globals": {
+    "unknown": "Tidak diketahui"
+  }
+}

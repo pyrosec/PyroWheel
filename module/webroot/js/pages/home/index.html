@@ -1,0 +1,30 @@
+<!-- INFO: Home page -->
+<div id="panel_home" class="panel">
+  <div class="header">Treat Wheel</div>
+  <div style="padding: 10px 0px;"></div>
+
+  <!-- INFO: Status card -->
+  <div id="info_card" class="bright card list">
+    <div class="brightc" style="display: flex; align-items: center;">
+      <div id="tw_icon_state" class="brightc" style="display: flex; align-items: center;">
+        <img class="brightc" src="assets/mark.svg">
+      </div>
+
+      <div id="tw_state" class="brightc lock" style="font-size: 1.2em; padding-left: 15px;">
+        {{workingModes.unknown}}
+      </div>
+    </div>
+  </div>
+
+  <!-- INFO: Info card -->
+  <div class="dim card">
+    <div class="dimc content">
+      <div id="version_info_title" class="dimc" style="font-size: 1.1em">{{version}}</div>
+      <div class="dimc desc" id="version_code" style="font-size: 0.9em; margin-top: 3px;">{{unknown}}</div>
+    </div>
+    <div class="dimc content" style="margin-top: 4px;">
+      <div id="root_info_title" class="dimc" style="font-size: 1.1em">{{rootImpl}}</div>
+      <div class="dimc desc" id="root_impl" style="font-size: 0.9em; margin-top: 3px;">{{unknown}}</div>
+    </div>
+  </div>
+</div>

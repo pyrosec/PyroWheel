@@ -1,0 +1,87 @@
+{
+  "langName": "Türkçe",
+  "pages": {
+    "home": {
+      "title": "Ana Sayfa",
+      "workingModes": {
+        "working": "Çalışıyor ve gizliyor",
+        "crashed": "Gizlemeye çalışırken çöktü",
+        "ignoring": "Görmezden geliniyor",
+        "unknown": "Belirlenemiyor",
+        "disabled": "Devre dışı",
+        "sigcheckFailed": "Geçersiz ReZygisk dijital imzası",
+        "improperAttribution": "Uygunsuz TW yazar belirteci",
+        "testVersionExpired": "TW test sürümünün süresi doldu"
+      },
+      "version": "Sürüm",
+      "rootImpl": "Root Metodu",
+      "rootImpls": {
+        "multiple": "Birden Çok"
+      }
+    },
+    "actions": {
+      "title": "Eylemler",
+      "ignoreMode": {
+        "title": "Herkesi ve her şeyi görmezden gel",
+        "description": "Bu özellik Treat Wheel modülünü geçici olarak etkisizleştirecek. Modül cihazı yeniden başlatmadan tekrar etkinleştirilebilir, ancak bu özellik kapatılana kadar aşağıda yer alan bütün özellikler işlevsiz kalacak."
+      },
+      "propSpoofing": {
+        "title": "Prop kandırmasını (kusurlu) etkisizleştir",
+        "description": "Bu özellik Treat Wheel modülünün kişisel ROM'lara yönelik özellikleri gizlemesini devre dışı bırakır. Bu seçeneğin işlevsel olabilmesi için yeniden başlatma gerekir."
+      },
+      "gsiTraceHiding": {
+        "title": "GSI izlerini gizlemeyi (kusurlu) etkisizleştir",
+        "description": "Bu özellik Treat Wheel modülünün GSI izlerini gizlemesini durduracak."
+      },
+      "zygoteMountInfoLeakFixing": {
+        "title": "Zygote mountinfo sızıntısını düzeltmeyi etkisizleştir",
+        "description": "Bu özellik Treat Wheel modülünün Zygote'un bıraktığı izleri -root erişimine sahip olmayan sistemler gibi görünecek şekilde- gizlemesini durduracak. Android 11 ya da daha üstü gerekir."
+      },
+      "mapsHiding": {
+        "title": "Bellek haritası gizlemeyi (kusurlu) etkisizleştir",
+        "description": "Bu özellik Treat Wheel modülünün şüpheli bellek haritalarını gizlemesini durduracak. Bu tip bir gizleme kusurludur ancak bazı denetlemeleri aşmaya yardımcı olur."
+      },
+      "ReVancedModuleMountsHiding": {
+        "title": "ReVanced modül bağlantılarını gizlemeyi etkisizleştir",
+        "description": "Bu özellik Treat Wheel modülünün ReVanced modüllerinin sistem geneline bıraktığı bağlantıları gizlemesini durduracak. ReVanced modülleri bağlantıların gizlenmesi için Treat Wheel modülüne özellikle destek vermelidir, aksi durumda bu gizleme özelliği etkisizdir."
+      },
+      "customFontLoading": {
+        "title": "Kişisel yazı tipi yüklemeyi etkisizleştir",
+        "description": "Bu özellik Treat Wheel modülünün sistemden kişisel yazı tipi yüklemesini durduracak."
+      },
+      "denylistLogicInversion": {
+        "title": "Gizleme listesi mantığını tersine çevirmeyi etkisizleştir",
+        "description": "Bu özellik Treat Wheel modülünün gizleme listesini işleme durumunu tersine çevirecek. Bu sayede gizleme listesindeki uygulamalarda root erişimi gizlenirken diğerlerinde gizlenmez. Bu özellik devre dışıyken Magisk Kitsune'nin SuList özelliğine benzer şekilde çalışır."
+      },
+      "moduleLoadingTracesHiding": {
+        "title": "Modüller yüklenirken oluşan izleri gizlemeyi etkisizleştir",
+        "description": "Bu özellik Treat Wheel modülünün bazı modüllerin yüklenirken oluşturdukları izleri gizlemesini durduracak."
+      },
+      "fridaTracesHiding": {
+        "title": "Frida izlerini gizlemeyi etkisizleştir",
+        "description": "Bu özellik Treat Wheel modülünün Frida tarafından oluşturulan enjeksiyon izlerini gizlemesini durduracak."
+      }
+    },
+    "settings": {
+      "title": "Ayarlar",
+      "language": {
+        "title": "Dili değiştir",
+        "description": "WebUI dilini seçilen dille değiştir"
+      },
+      "fullscreen": {
+        "title": "WebUI tam ekran modunu etkisizleştir",
+        "description": "Bu özellik WebUI'nin bütün ekranı kaplamasını durduracak."
+      },
+      "moduleDevelopers": "Modül Geliştiricileri",
+      "WebUIDevelopers": "WebUI Geliştiricileri",
+      "moduleLicense": {
+        "title": "Modül Lisansı",
+        "license": "Kapalı Kaynak"
+      },
+      "WebUILicense": "WebUI Lisansı"
+    }
+  },
+  "globals": {
+    "unknown": "Bilinmiyor"
+  }
+}

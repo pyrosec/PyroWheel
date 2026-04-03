@@ -1,0 +1,87 @@
+{
+  "langName": "Português (Brasil)",
+  "pages": {
+    "home": {
+      "title": "Início",
+      "workingModes": {
+        "working": "Funcionando e escondendo",
+        "crashed": "Crash ao esconder",
+        "ignoring": "Ignorando",
+        "unknown": "Incapaz de determinar",
+        "disabled": "Desativado",
+        "sigcheckFailed": "Assinatura digital do ReZygisk inválida",
+        "improperAttribution": "Atribuição imprópria de author do TW",
+        "testVersionExpired": "Versão de teste do TW fora da data de validade"
+      },
+      "version": "Versão",
+      "rootImpl": "Implementação de root",
+      "rootImpls": {
+        "multiple": "Vários"
+      }
+    },
+    "actions": {
+      "title": "Ações",
+      "ignoreMode": {
+        "title": "Ignorar tudo e todos",
+        "description": "Esta opção fará com que o Treat Wheel seja temporariamente desativado. È possível reativá-lo sem reiniciar, mas fará todos métodos de ocultação de root inúteis até que seja desativado."
+      },
+      "propSpoofing": {
+        "title": "Desativar falsificação de props (fútil)",
+        "description": "Esta opção fará com que o Treat Wheel pare de falsificar as sensitive props e relacionados a custom ROMs. É necessário reiniciar para que as alterações tomem efeito."
+      },
+      "gsiTraceHiding": {
+        "title": "Desativar ocultação de traços de GSIs (fútil)",
+        "description": "Esta opção fará com que o Treat Wheel pare de esconder traços criados por GSIs."
+      },
+      "zygoteMountInfoLeakFixing": {
+        "title": "Desativar correção de vazamento do mountinfo pelo Zygote",
+        "description": "Esta opção fará com que o Treat Wheel pare de corrigir, no sentido de fazer com que seja igual ao esperado em um sistema sem root, o vazamento de um mountinfo que o Zygote faz. Requer Android 11 ou superior."
+      },
+      "mapsHiding": {
+        "title": "Desativar ocultação de maps (fútil)",
+        "description": "Esta opção faz com que o Treat Wheel pare de esconder mappings suspeitos. Este tipo de ocultação é fútil, mas ajuda a passar algumas detecções."
+      },
+      "ReVancedModuleMountsHiding": {
+        "title": "Desativar ocultação de mounts dos módulos ReVanced",
+        "description": "Esta opção faz com que o Treat Wheel pare de esconder mounts que módulos ReVanced criam globalmente. Módulos ReVanced tem que ter suporte explícito para o Treat Wheel dar umount neles."
+      },
+      "customFontLoading": {
+        "title": "Desativar carregamento de fontes personalizadas",
+        "description": "Esta opção faz com que o Treat Wheel pare de carregar fontes personalizadas do sistema."
+      },
+      "denylistLogicInversion": {
+        "title": "Desativar inversão da lógica da DenyList",
+        "description": "Esta opção faz com que o Treat Wheel inverta a DenyList, de modo que aplicativos na DenyList não tenham root escondido, e os que estão fora tenham, similar ao SuList do Magisk Kitsune."
+      },
+      "moduleLoadingTracesHiding": {
+        "title": "Desativar ocultação de traços de carregamento de módulos",
+        "description": "Esta opção faz com que o Treat Wheel pare de esconder traços gerados durante o carregamento de alguns módulos."
+      },
+      "fridaTracesHiding": {
+        "title": "Desativar ocultação de trados do Frida",
+        "description": "Esta opção faz com que o Treat Wheel pare de esconder traços de injeção feitos pelo Frida."
+      }
+    },
+    "settings": {
+      "title": "Configurações",
+      "language": {
+        "title": "Mudar idioma",
+        "description": "Muda o idioma da WebUI para o selecionado."
+      },
+      "fullscreen": {
+        "title": "Desativar modo de tela cheia na WebUI",
+        "description": "Esta opção faz com que a WebUI não preencha toda a tela."
+      },
+      "moduleDevelopers": "Desenvolvedor(es) do módulo",
+      "WebUIDevelopers": "Desenvolvedor(es) da WebUI",
+      "moduleLicense": {
+        "title": "Licença do módulo",
+        "license": "Proprietária"
+      },
+      "WebUILicense": "Licença da WebUI"
+    }
+  },
+  "globals": {
+    "unknown": "Desconhecido"
+  }
+}

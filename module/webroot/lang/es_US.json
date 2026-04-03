@@ -1,0 +1,87 @@
+{
+  "langName": "Español (Estados Unidos)",
+  "pages": {
+    "home": {
+      "title": "Inicio",
+      "workingModes": {
+        "working": "Funcionando y ocultando",
+        "crashed": "Falló durante el ocultamiento",
+        "ignoring": "Ignorando",
+        "unknown": "No se puede determinar",
+        "disabled": "Deshabilitado",
+        "sigcheckFailed": "Firma digital ReZygisk inválida",
+        "improperAttribution": "Atribución de autor de TW incorrecta",
+        "testVersionExpired": "La versión de prueba TW expiró"
+      },
+      "version": "Versión",
+      "rootImpl": "Implementación de Root",
+      "rootImpls": {
+        "multiple": "Múltiple"
+      }
+    },
+    "actions": {
+      "title": "Acciones",
+      "ignoreMode": {
+        "title": "Ignorar todo",
+        "description": "Esta opción deshabilitará temporalmente Treat Wheel. Puede volver a habilitarse sin reiniciar, pero al hacerlo todas las opciones de ocultamiento serán inútiles hasta que se desactive."
+      },
+      "propSpoofing": {
+        "title": "Desactivar props spoofing (inútil)",
+        "description": "Esta opción hará que Treat Wheel deje de ocultar las funciones relacionadas con ROMs personalizadas. Se requiere reiniciar el equipo para que este cambio tenga efecto."
+      },
+      "gsiTraceHiding": {
+        "title": "Deshabilitar ocultamiento de rastros GSI (inútil)",
+        "description": "Esta opción hará que Treat Wheel deje de ocultar rastros GSI."
+      },
+      "zygoteMountInfoLeakFixing": {
+        "title": "Deshabilitar corrección de fuga de mountinfo de Zygote",
+        "description": "Esta opción hará que Treat Wheel deje de corregir la fuga de información de mountinfo que crea Zygote, dejándola tal como se comporta en sistemas sin root. Requiere Android 11 o superior."
+      },
+      "mapsHiding": {
+        "title": "Deshabilitar ocultamiento de mapas (inútil)",
+        "description": "Esta opción hará que Treat Wheel deje de ocultar mapeos sospechosos. Este tipo de ocultamiento es inútil, pero ayuda a pasar algunas detecciones."
+      },
+      "ReVancedModuleMountsHiding": {
+        "title": "Deshabilitar ocultamiento de montajes de módulos ReVanced",
+        "description": "Esta opción hará que Treat Wheel deje de ocultar los montajes que crean los módulos ReVanced globalmente. Los módulos de ReVanced deben tener soporte directo para Treat Wheel para que este pueda desmontarlos."
+      },
+      "customFontLoading": {
+        "title": "Deshabilitar carga de fuentes personalizadas",
+        "description": "Esta opción hará que Treat Wheel deje de cargar fuentes personalizadas del sistema."
+      },
+      "denylistLogicInversion": {
+        "title": "Deshabilitar inversión de lógica de la DenyList",
+        "description": "Esta opción hará que Treat Wheel deje de invertir la DenyList, de modo que las aplicaciones en la DenyList tendrán root oculto, y las que no estén no lo tendrán oculto. Similar a la SuList de Magisk Kitsune cuando esta opción está deshabilitada."
+      },
+      "moduleLoadingTracesHiding": {
+        "title": "Deshabilitar ocultamiento de rastros de carga de módulos",
+        "description": "Esta opción hará que Treat Wheel deje de ocultar los rastros generadas por algunos módulos durante su carga."
+      },
+      "fridaTracesHiding": {
+        "title": "Deshabilitar ocultamiento de rastros de Frida",
+        "description": "Esta opción hará que Treat Wheel deje de ocultar los rastros de inyección generadas por Frida."
+      }
+    },
+    "settings": {
+      "title": "Configuración",
+      "language": {
+        "title": "Cambiar idioma",
+        "description": "Cambia el idioma de la interfaz web al seleccionado."
+      },
+      "fullscreen": {
+        "title": "Deshabilitar modo pantalla completa en la interfaz web",
+        "description": "Esta opción evitará que la interfaz web ocupe toda la pantalla."
+      },
+      "moduleDevelopers": "Desarrollador(es) del módulo",
+      "WebUIDevelopers": "Desarrollador(es) de la interfaz web",
+      "moduleLicense": {
+        "title": "Licencia del módulo",
+        "license": "Propietaria"
+      },
+      "WebUILicense": "Licencia de la interfaz web"
+    }
+  },
+  "globals": {
+    "unknown": "Desconocido"
+  }
+}

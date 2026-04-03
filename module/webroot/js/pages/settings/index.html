@@ -1,0 +1,63 @@
+<!-- INFO: Settings page -->
+<div id="panel_home" class="panel">
+  <div class="header">Treat Wheel: {{title}} </div>
+  <div style="padding: 10px 0px;"></div>
+
+  <!-- INFO: Change language -->
+  <div id="lang_page_toggle" class="small_card dimc card_animation" style="margin-top: 15px;">
+    <div class="dimc" style="display: inline-block;">
+      <div class="dimc content" style="font-size: 1.1em; padding-left: 5px; padding-top: 6px; padding-bottom: 2px;">
+        {{language.title}}
+      </div>
+      <div class="dimc desc" style="font-size: 0.9em; padding-left: 5px; padding-bottom: 6px;">
+        {{language.description}}
+      </div>
+    </div>
+  </div>
+
+  <div class="small_card dimc" style="margin-top: 15px;">
+    <div class="action_card">
+      <div class="dimc content action_card_title">
+        {{fullscreen.title}}
+      </div>
+      <div class="dimc desc action_card_description">
+        {{fullscreen.description}}
+      </div>
+    </div>
+
+    <label class="switch dimc">
+      <input id="tw_webui_fullscreen_switch" type="checkbox">
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <!-- INFO: Credit card -->
+  <div class="dim card" style="margin-top: 15px;">
+    <div class="dimc content">
+      <div id="mcre_title" class="dimc" style="font-size: 1.1em">{{moduleDevelopers}}</div>
+      <div class="dimc desc" style="font-size: 0.9em; margin-top: 3px; cursor: pointer; user-select: text;">
+        ThePedroo, RainyXeon
+      </div>
+    </div>
+
+    <div class="dimc" style="margin-top: 15px;">
+      <div id="webcre_title" class="dimc" style="font-size: 1.1em">{{WebUIDevelopers}}</div>
+      <div credit-link="github.com/RainyXeon" class="dimc desc" style="font-size: 0.9em; margin-top: 3px; cursor: pointer; user-select: text;">
+        RainyXeon
+      </div>
+    </div>
+  </div>
+
+  <!-- INFO: License card -->
+  <div class="dim card" style="margin-top: 15px;">
+    <div class="dimc content">
+      <div id="mlic_title" class="dimc" style="font-size: 1.1em">{{moduleLicense.title}}</div>
+      <div class="dimc desc" style="font-size: 0.9em; margin-top: 3px;">{{moduleLicense.license}}</div>
+    </div>
+
+    <div class="dimc" style="margin-top: 6px;">
+      <div id="mweb_title" class="dimc" style="font-size: 1.1em">{{WebUILicense}}</div>
+      <div class="dimc desc" style="font-size: 0.9em; margin-top: 3px;">AGPL 3</div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+  <head>
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <meta name="viewport" content="viewport-fit=cover" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="https://mui.kernelsu.org/internal/insets.css">
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/icons.css">
+
+    <script src="js/pages/pageLoader.js" type="module"></script>
+  </head>
+  <body id="main_body">
+    <!-- INFO: Loading screen -->
+    <div id="loading_screen">
+      <div id="backport_errorh" class="loader"></div>
+    </div>
+
+    <div id="minipage_content">
+      <!-- INFO: Dynamically replaced -->
+    </div>
+
+    <div id="page_content">
+      <!-- INFO: Dynamically replaced -->
+    </div>
+
+    <!-- INFO: Bottom navbar -->
+    <div id="navbar_support_div">
+      <div id="navbar" class="radios">
+        <div class="navicon_support nav_dimc">
+          <input id="n_home" type="radio" name="navbutton" value="home"/>
+          <label class="radio nav_dimc" for="n_home">
+
+            <div class="navicon_support nav_dimc" style="display: grid; place-items: center;">
+              <div class="navicon_support nav_dimc" style="display: grid; place-items: center; width: 65px;">
+                <div style="grid-area: 1 / 1;" id="ni_home"></div>
+                <div style="grid-area: 1 / 1;" id="nibg_home" class="navicon"></div>
+              </div>
+              <div id="nav_home_title" class="navtitle nav_dimc">Home</div>
+            </div>
+          </label>
+        </div>
+
+        <div class="navicon_support nav_dimc">
+          <input id="n_actions" type="radio" name="navbutton" value="actions"/>
+          <label class="radio nav_dimc" for="n_actions">
+  
+            <div class="navicon_support nav_dimc" style="display: grid; place-items: center;">
+              <div class="navicon_support nav_dimc" style="display: grid; place-items: center; width: 65px;">
+                <div style="grid-area: 1 / 1;" id="ni_actions"></div>
+                <div style="grid-area: 1 / 1;" id="nibg_actions" class="navicon"></div>
+              </div>
+              <div id="nav_actions_title" class="navtitle nav_dimc">Actions</div>
+            </div>
+
+          </label>
+        </div>
+
+        <div class="navicon_support nav_dimc">
+          <input id="n_settings" type="radio" name="navbutton" value="settings"/>
+          <label class="radio nav_dimc" for="n_settings">
+
+            <div class="navicon_support nav_dimc" style="display: grid; place-items: center;">
+              <div class="navicon_support nav_dimc" style="display: grid; place-items: center; width: 65px;">
+                <div style="grid-area: 1 / 1;" id="ni_settings"></div>
+                <div style="grid-area: 1 / 1;" id="nibg_settings" class="navicon"></div>
+              </div>
+              <div id="nav_settings_title" class="navtitle nav_dimc">Settings</div>
+            </div>
+          </label>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

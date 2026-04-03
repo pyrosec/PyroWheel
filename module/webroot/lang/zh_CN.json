@@ -1,0 +1,87 @@
+{
+  "langName": "简体中文（中国）",
+  "pages": {
+    "home": {
+      "title": "首页",
+      "workingModes": {
+        "working": "隐藏工作中",
+        "crashed": "隐藏在工作的时候崩溃",
+        "ignoring": "隐藏被忽略",
+        "unknown": "状态无法获取",
+        "disabled": "已关闭",
+        "sigcheckFailed": "错误的 ReZygisk 签名",
+        "improperAttribution": "TreatWheel 作者信息被修改",
+        "testVersionExpired": "测试版 TW 已经失效"
+      },
+      "version": "版本",
+      "rootImpl": "Root 实现方式",
+      "rootImpls": {
+        "multiple": "多个 Root 实现"
+      }
+    },
+    "actions": {
+      "title": "选项",
+      "ignoreMode": {
+        "title": "一键关掉所有功能",
+        "description": "该选项将暂时禁用 Treat Wheel 所有功能。它可以在不重启的情况下重新启用，但启用后所有隐藏选项都会失效。"
+      },
+      "propSpoofing": {
+        "title": "禁用属性伪装（徒劳）",
+        "description": "此选项将使 Treat Wheel 停止伪装敏感和自定义 ROM 相关的属性。开关本功能需要重启设备以生效。"
+      },
+      "gsiTraceHiding": {
+        "title": "禁用 GSI 痕迹隐藏（徒劳）",
+        "description": "该选项会暂时禁用 Treat Wheel 隐藏通用系统映像（GSI）的痕迹。"
+      },
+      "zygoteMountInfoLeakFixing": {
+        "title": "禁用 Zygote mountinfo 泄漏修复功能",
+        "description": "该选项会让 Treat Wheel 停止修复 Zygote 创建的 mountinfo 泄漏问题（也就是让它表现得像在未 Root 的系统中那样）。需要 Android 11 或更高版本。"
+      },
+      "mapsHiding": {
+        "title": "禁用 maps 隐藏（徒劳）",
+        "description": "该选项会让 Treat Wheel 停止隐藏可疑的内存映射。虽然这种隐藏方式从技术角度来看是徒劳的，但它有助于绕过某些检测机制。"
+      },
+      "ReVancedModuleMountsHiding": {
+        "title": "禁用对 ReVanced 模块挂载的隐藏",
+        "description": "该选项会让 Treat Wheel 停止隐藏 ReVanced 模块在系统中创建的全局挂载点。ReVanced 模块必须显式支持 Treat Wheel，才能让后者卸载它们。"
+      },
+      "customFontLoading": {
+        "title": "禁用自定义字体加载",
+        "description": "该选项将使 Treat Wheel 停止从系统中加载自定义字体。"
+      },
+      "denylistLogicInversion": {
+        "title": "禁用排除列表反转",
+        "description": "该选项会禁用 Treat Wheel 反转排除列表的功能，这样排除列表中的应用将会启用 Root 隐藏，排除列表外的应用则不会。这个选项关闭后的效果类似于狐妖面具的 SuList。"
+      },
+      "moduleLoadingTracesHiding": {
+        "title": "禁用模块加载追踪隐藏",
+        "description": "该选项会让 Treat Wheel 停止隐藏一些模块在加载时产生的追踪记录。"
+      },
+      "fridaTracesHiding": {
+        "title": "禁用 Frida 追踪隐藏",
+        "description": "该选项会让 Treat Wheel 停止隐藏 Frida 产生的注入追踪记录。"
+      }
+    },
+    "settings": {
+      "title": "设置",
+      "language": {
+        "title": "更改语言",
+        "description": "更改 WebUI 的语言为你所选择的"
+      },
+      "fullscreen": {
+        "title": "禁止全屏 WebUI",
+        "description": "该选项不会让WebUI覆盖整个屏幕"
+      },
+      "moduleDevelopers": "模块开发者",
+      "WebUIDevelopers": "WebUI 开发者",
+      "moduleLicense": {
+        "title": "模块许可证",
+        "license": "闭源"
+      },
+      "WebUILicense": "WebUI 许可证"
+    }
+  },
+  "globals": {
+    "unknown": "未知"
+  }
+}

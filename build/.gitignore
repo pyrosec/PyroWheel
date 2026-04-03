@@ -1,0 +1,8 @@
+*
+
+!src/
+!src/customize.sh
+!src/post-fs-data.sh
+!src/boot-completed.sh
+!.gitignore
+!module.prop

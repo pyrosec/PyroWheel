@@ -1,0 +1,87 @@
+{
+  "langName": "Vietnamese (Việt Nam)",
+  "pages": {
+    "home": {
+      "title": "Trang Chủ",
+      "workingModes": {
+        "working": "Đang hoạt động và ẩn",
+        "crashed": "Gặp vấn đề khi ẩn",
+        "ignoring": "Chế độ không xử lý",
+        "unknown": "Không xác định",
+        "disabled": "Đã vô hiệu hoá",
+        "sigcheckFailed": "Chứng nhận ReZygisk không hợp lệ",
+        "improperAttribution": "Thông tin ghi công những tác giả TW không đúng",
+        "testVersionExpired": "Phiên bản TW này đã hết hạn"
+      },
+      "version": "Phiên bản",
+      "rootImpl": "Triển khai root",
+      "rootImpls": {
+        "multiple": "Đa triển khai"
+      }
+    },
+    "actions": {
+      "title": "Hành động",
+      "ignoreMode": {
+        "title": "Ngừng ẩn tất cả",
+        "description": "Tùy chọn này sẽ khiến Treat Wheel tạm thời bị vô hiệu hóa. Tùy chọn này có thể được kích hoạt mà không cần khởi động lại, nhưng khi kích hoạt, tất cả các tùy chọn ẩn sẽ trở nên vô dụng cho đến khi bị vô hiệu hóa."
+      },
+      "propSpoofing": {
+        "title": "Vô hiệu hoá khả năng làm giả prop (không hiệu quả)",
+        "description": "Tùy chọn này sẽ khiến Treat Wheel dừng việc làm giả các prop trong hệ thống ROM tùy chỉnh. Tùy chọn này yêu cầu khởi động lại thiết bị để hoạt động."
+      },
+      "gsiTraceHiding": {
+        "title": "Vô hiệu hóa ẩn dấu vết GSI (không hiệu quả)",
+        "description": "Tùy chọn này sẽ khiến Treat Wheel ngừng ẩn các dấu vết của GSI."
+      },
+      "zygoteMountInfoLeakFixing": {
+        "title": "Vô hiệu hóa sửa lỗi rò rỉ thông tin mount của Zygote",
+        "description": "Tùy chọn này sẽ khiến Treat Wheel ngừng sửa lỗi, đưa thông tin mount rỏ rì do Zygote tạo ra trở về trạng thái như mong đợi như hệ thống chưa root. Yêu cầu Android 11 trở lên."
+      },
+      "mapsHiding": {
+        "title": "Vô hiệu hóa ẩn các maps (không hiệu quả)",
+        "description": "Tùy chọn này sẽ khiến Treat Wheel ngừng ẩn các mapping đáng ngờ. Loại ẩn này không hiệu quả, nhưng nó giúp vượt qua một số loại phát hiện root."
+      },
+      "ReVancedModuleMountsHiding": {
+        "title": "Vô hiệu hóa ẩn các mount của module ReVanced",
+        "description": "Tùy chọn này sẽ khiến Treat Wheel ngừng ẩn các mount mà mô-đun ReVanced tạo ra trên global. Mô-đun ReVanced cần phải có hỗ trợ Treat Wheel để thực hiện umount."
+      },
+      "customFontLoading": {
+        "title": "Tắt phông chữ tùy chọn của hệ thống",
+        "description": " Tùy chọn này sẽ khiến Treat Wheel ngừng sử dụng phông chữ tùy chỉnh từ hệ thống."
+      },
+      "denylistLogicInversion": {
+        "title": "Tắt logic đảo ngược của danh sách từ chối (denylist)",
+        "description": "Tùy chọn này sẽ khiến Treat Wheel ngừng đảo ngược DenyList, do đó các ứng dụng trong DenyList sẽ bị ẩn root, còn các ứng dụng bên ngoài sẽ không bị ẩn. Tương tự như SuList của Magisk Kitsune khi tắt nút bật/tắt này."
+      },
+      "moduleLoadingTracesHiding": {
+        "title": "Vô hiệu hoá ẩn dấu vết cho mô đun",
+        "description": "Lựa chọn này sẽ khiến Treat Wheel dừng việc ẩn dấu vết của một số mô đun khi đang chạy."
+      },
+      "fridaTracesHiding": {
+        "title": "Vô hiệu hoá ẩn dấu vết của Frida",
+        "description": "Lựa chọn này sẽ làm Treat Wheel dừng việc ẩn dấu vết injection được tạo ra bởi Frida."
+      }
+    },
+    "settings": {
+      "title": "Cài đặt",
+      "language": {
+        "title": "Chuyển ngôn ngữ",
+        "description": "Thay đổi ngôn ngữ của WebUI sang ngôn ngữ được chọn"
+      },
+      "fullscreen": {
+        "title": "Vô hiệu hóa chế độ toàn màn hình trong WebUI",
+        "description": "Tùy chọn này sẽ khiến WebUI không chiếm toàn bộ màn hình."
+      },
+      "moduleDevelopers": "Nhà phát triển Module",
+      "WebUIDevelopers": "Nhà phát triển WebUI",
+      "moduleLicense": {
+        "title": "Giấy phép Module",
+        "license": "Độc quyền"
+      },
+      "WebUILicense": "Giấy phép WebUI"
+    }
+  },
+  "globals": {
+    "unknown": "Không xác định"
+  }
+}
