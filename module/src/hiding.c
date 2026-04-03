@@ -86,13 +86,17 @@ static int is_suspicious_path(const char *path) {
 }
 
 /**
- * Hide suspicious entries from /proc/self/maps by replacing mapped regions
- * with anonymous private mappings. DroidGuard reads /proc/self/maps to find
- * loaded libraries — if it sees magisk/zygisk/module paths, it fails attestation.
+ * Hide suspicious entries from /proc/self/maps by replacing mapped file-backed
+ * regions with anonymous private mappings that preserve the original contents.
+ * DroidGuard reads /proc/self/maps to find loaded libraries — if it sees
+ * magisk/zygisk/module paths, it fails attestation.
  *
- * Strategy: for each suspicious mapping, mmap MAP_FIXED|MAP_ANONYMOUS over
- * the same address range, which replaces the named mapping with "[anon:...]"
- * or just blank in /proc/self/maps.
+ * Strategy: for each suspicious mapping:
+ *   1. Allocate a temporary buffer and copy the memory contents
+ *   2. mmap MAP_FIXED|MAP_ANONYMOUS over it (hides the file path)
+ *   3. Copy the original contents back (preserves code/data)
+ * This makes the mapping appear anonymous in /proc/self/maps while keeping
+ * the actual code functional.
  */
 int do_maps_hiding(struct api_table *api_table, JNIEnv *tw_env) {
   (void) api_table;
@@ -118,18 +122,40 @@ int do_maps_hiding(struct api_table *api_table, JNIEnv *tw_env) {
     if (m->perms & PROT_WRITE) prot |= PROT_WRITE;
     if (m->perms & PROT_EXEC)  prot |= PROT_EXEC;
 
-    /* Replace with anonymous mapping — this overwrites the path in /proc/self/maps */
+    /* Step 1: Make region readable so we can copy its contents */
+    if (!(prot & PROT_READ)) {
+      mprotect((void *)m->addr_start, len, prot | PROT_READ);
+    }
+
+    /* Step 2: Copy the current memory contents to a temporary buffer */
+    void *backup = malloc(len);
+    if (!backup) {
+      LOGD("MH: malloc failed for %zu bytes, skipping %s", len, m->path);
+      continue;
+    }
+    memcpy(backup, (void *)m->addr_start, len);
+
+    /* Step 3: Replace with anonymous mapping (hides the file path in maps) */
     void *ret = mmap((void *)m->addr_start, len,
-                     prot,
+                     PROT_READ | PROT_WRITE,
                      MAP_PRIVATE | MAP_ANONYMOUS | MAP_FIXED,
                      -1, 0);
     if (ret == MAP_FAILED) {
       LOGD("MH: mmap failed for %s at %p-%p: %s",
            m->path, (void *)m->addr_start, (void *)m->addr_end, strerror(errno));
-    } else {
-      LOGD("MH: Hidden map: %s", m->path);
-      hidden++;
+      free(backup);
+      continue;
     }
+
+    /* Step 4: Restore the original contents into the anonymous mapping */
+    memcpy((void *)m->addr_start, backup, len);
+    free(backup);
+
+    /* Step 5: Restore the original protection flags */
+    mprotect((void *)m->addr_start, len, prot);
+
+    LOGD("MH: Hidden map (content preserved): %s", m->path);
+    hidden++;
   }
 
   free_maps(maps);
